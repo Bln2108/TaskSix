@@ -50,6 +50,7 @@ public class StatsServiceTest {
         int expected = 15;
         Assertions.assertEquals(actual, expected);
     }
+
     @Test
     void TestTotal() {
         StatsService service = new StatsService();

@@ -8,7 +8,7 @@ public class Main {
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int actual = service.amountTotalAverageMax(sales);
         int expected = 5;
-        System.out.println( " ОР: " + actual + "  ФР: " + expected);
+        System.out.println(" ОР: " + actual + "  ФР: " + expected);
 
 
         //StatsService service = new StatsService();

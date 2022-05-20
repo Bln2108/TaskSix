@@ -10,13 +10,8 @@ public class StatsService {
     }
 
     public int amountTotalAverage(int[] sales) {
-        int total = 0;
-        for (int sale : sales) {
-            total += sale;
-        }
-        return total / 12;
+        return amountTotal (sales) / sales.length;
     }
-
 
     public int maxSales(int[] sales) {
         int maxMonth = 0;
@@ -46,14 +41,10 @@ public class StatsService {
     }
 
     public int amountTotalAverageMin(int[] sales) {
-        int total = 0;
-        for (int sale : sales) {
-            total += sale;
-        }
-        int totalAv = total / 12;
+        int total = amountTotalAverage(sales);
         int i = 0;
         for (int sale : sales) {
-            if (sale < totalAv) {
+            if (sale < total) {
                 i++;
             }
         }
@@ -61,14 +52,10 @@ public class StatsService {
     }
 
     public int amountTotalAverageMax (int[] sales) {
-        int total = 0;
-        for (int sale : sales) {
-            total += sale;
-        }
-        int totalAv = total / 12;
+        int total = amountTotalAverage(sales);
         int i = 0;
         for (int sale : sales) {
-            if (sale > totalAv) {
+            if (sale > total) {
                 i++;
             }
         }
